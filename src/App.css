@@ -2,12 +2,12 @@
   height: 100vh;
 }
 .canvas-container {
-  width: 30rem;
+  width: 25rem;
   height: 30rem;
   position: absolute;
   right: 10%;
   top: 20%;
-
+  /* background-color: #C5D098; */
 }
 .text {
   position: absolute;
