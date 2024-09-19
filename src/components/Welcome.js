@@ -9,7 +9,7 @@ function Welcome() {
       <div className='text'>
         <h1>Hello!</h1>
         <p>Welcome to my page. I'm Michelle and this is where I share my passions &lt;3</p>
-        <p>Scroll down to explore </p>
+        <p>Give Miffy a twirl and scroll down to explore! </p>
       </div>
 
       <div className='canvas-container'>

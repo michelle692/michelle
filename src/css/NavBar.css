@@ -1,0 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 80px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: gray;
+}

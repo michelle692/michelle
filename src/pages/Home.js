@@ -1,6 +1,7 @@
 import FeaturedOne from '../components/FeaturedOne';
 import FeaturedThree from '../components/FeaturedThree';
 import FeaturedTwo from '../components/FeaturedTwo';
+import NavBar from '../components/NavBar';
 import Welcome from '../components/Welcome';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +9,7 @@ function Home() {
   return (
     <div>
       <div>
+        <NavBar />
         <Welcome />
         <FeaturedOne />
         <FeaturedTwo />
