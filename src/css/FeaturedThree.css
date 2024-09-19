@@ -1,0 +1,40 @@
+.f-three {
+  height: 50vh;
+  position: relative;
+}
+.pixie-img {
+  width: 48%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+}
+.f-three h2 {
+  position: absolute;
+  left: 60%;
+  top: 65%;
+  font-size: 1.5rem;
+  font-weight: 430;
+}
+.f-three h2{
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #007bff;
+  }
+}
+.f-three p {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  margin-right: 6%;
+  line-height: 150%;
+  font-size: 0.9rem;
+}
+.f-three p {
+  a {
+    color: #ff0000;
+  }
+}
