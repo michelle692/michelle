@@ -1,0 +1,24 @@
+.about-container h1 {
+  position: absolute;
+  left: 7%;
+  bottom: 0;
+  font-size: 4rem;
+  font-weight: 450;
+  font-style: italic;
+}
+.about-container p {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  margin-right: 30%;
+  font-style: italic;
+}
+.profile-circle {
+  position: absolute;
+  left: 33%;
+  top: 31%;
+  width: 4.7%;
+  height: 8%;
+  border-radius: 50%;
+  object-fit: cover;
+}

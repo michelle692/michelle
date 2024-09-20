@@ -1,0 +1,8 @@
+.projects-container h1 {
+  position: absolute;
+  left: 7%;
+  bottom: 0;
+  font-size: 4rem;
+  font-weight: 450;
+  font-style: italic;
+}
