@@ -15,15 +15,15 @@
   top: 65%;
   font-size: 1.5rem;
   font-weight: 430;
+  text-decoration: none;
 }
-.f-three h2{
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #007bff;
-  }
+.f-three-title {
+  color: black;
+  text-decoration: none;
+}
+
+.f-three-title:hover {
+color: #007bff;
 }
 .f-three p {
   position: absolute;
@@ -33,8 +33,6 @@
   line-height: 150%;
   font-size: 0.9rem;
 }
-.f-three p {
-  a {
-    color: #007bff;
-  }
+.f-three-desc {
+  color: #007bff;
 }
