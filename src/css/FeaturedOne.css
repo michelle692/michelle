@@ -1,8 +1,8 @@
-.page-two {
+.f-one {
   height: 100vh;
   position: relative;
 }
-.page-two h1 {
+.f-one h1 {
   position: absolute;
   left: 7%;
   top: 5%;
@@ -17,7 +17,7 @@
   top: 33%;
   left: 7%;
 }
-.page-two h2 {
+.f-one h2 {
   position: absolute;
   left: 60%;
   top: 53%;
@@ -34,7 +34,7 @@
   color: #007bff;
 }
 
-.page-two p {
+.f-one p {
   position: absolute;
   left: 60%;
   top: 59%;
@@ -42,8 +42,6 @@
   line-height: 150%;
   font-size: 0.9rem;
 }
-.page-two p {
-  a {
-    color: #007bff;
-  }
+.f-one-desc {
+  color: #007bff;
 }
