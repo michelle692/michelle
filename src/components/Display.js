@@ -128,11 +128,11 @@ function Display() {
   }
 
   return (
-      <div className='display-container'>
+      <div className='carousel-container'>
         <Canvas>
           <OrthographicCamera
             makeDefault
-            zoom={450}
+            zoom={500}
             near={1}
             far={2000}
             position={[85, 3, 0]}
@@ -143,8 +143,8 @@ function Display() {
 
           <Carousel planeCount={planeCount} targetRotation={targetRotation} textures={textures}/>
 
-          <ArrowButton style={{ bottom: '-18rem', right: '2rem' }}  label="&lt;" onClick={handlePrev} />
-          <ArrowButton style={{ bottom: '-18rem', left: '2rem' }} label="&gt;" onClick={handleNext} />
+          <ArrowButton style={{ bottom: '-22rem', right: '2rem' }}  label="&lt;" onClick={handlePrev} />
+          <ArrowButton style={{ bottom: '-22rem', left: '2rem' }} label="&gt;" onClick={handleNext} />
         </Canvas> 
         {/* <div>
           <button onClick={handlePrev}>Previous</button>

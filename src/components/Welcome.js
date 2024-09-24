@@ -5,7 +5,7 @@ import { Miffy } from './Miffy';
 
 function Welcome() {
   return (
-    <div className='page-one'>
+    <div className='welcome-container'>
       <div className='text'>
         <h1>Hello!</h1>
         <p>Welcome to my page. I'm Michelle and this is where I share my passions &lt;3</p>

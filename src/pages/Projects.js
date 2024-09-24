@@ -4,11 +4,15 @@ import ProjectTitles from "../components/ProjectTitles";
 import '../css/Projects.css'
 function Projects() {
   return (
-    <div>
+    <div className="projects-container">
       <NavBar />
-      <Display />
-      <ProjectTitles />
-      <div className="projects-container">
+      <div className="display-container">
+        <Display />
+      </div>
+      <div className="titles-container">
+        <ProjectTitles />
+      </div>
+      <div>
         <h1>Projects</h1>
       </div>
     </div>

@@ -1,15 +1,17 @@
 const projectsDatabase = {
   "PixieDust": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
-      {"source": "/images/pixiedust.png"}
+      {"source": "/images/pixiedust.png"},
+      {"source": "/images/raytracer.png"},
+      {"source": "/images/solar.png"}
     ],
     "embeded": "false",
     "title": "PixieDust",
     "description": "A website project focused on XYZ."
   },
   "3DWatchHistory": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
       {"source": "/images/3dwatch.png"}
     ],
@@ -18,7 +20,7 @@ const projectsDatabase = {
     "description": "3D visualization of watch history using ABC framework."
   },
   "Roam": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
       {"source": "/images/roam.png"}
     ],
@@ -27,7 +29,7 @@ const projectsDatabase = {
     "description": "A project on building a virtual roaming environment."
   },
   "ConceptGenerator": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
       {"source": "/images/conceptgenerator.png"}
     ],
@@ -36,7 +38,7 @@ const projectsDatabase = {
     "description": "Generates concepts based on user input."
   },
   "ConnectGT": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
       {"source": "/images/connectatgt.png"}
     ],
@@ -45,7 +47,7 @@ const projectsDatabase = {
     "description": "A platform for connecting students at GT."
   },
   "ClutchIt": {
-    "category": "websites",
+    "category": "WEBSITES",
     "images": [
       {"source": "/images/clutchit.png"}
     ],
@@ -54,7 +56,7 @@ const projectsDatabase = {
     "description": "An app for managing student organizations."
   },
   "30SecondAnimation": {
-    "category": "computer graphics",
+    "category": "COMPUTER GRAPHICS",
     "images": [
       {"source": "/images/animation.png"}
     ],
@@ -63,7 +65,7 @@ const projectsDatabase = {
     "description": "An animation project showcasing various techniques in animation."
   },
   "RayTracing": {
-    "category": "computer graphics",
+    "category": "COMPUTER GRAPHICS",
     "images": [
       {"source": "/images/raytracer.png"}
     ],
@@ -72,7 +74,7 @@ const projectsDatabase = {
     "description": "This project was done for my computer graphics course. I wrote a collection of javascript functions that creates a 3D scene and produces 2D images of the scene. I made 8 different scenes that render different variations of spheres and cylinders in different lighting/shading. I also implemented shadow creation and surface reflections."
   },
   "GPUProgramming": {
-    "category": "computer graphics",
+    "category": "COMPUTER GRAPHICS",
     "images": [
       {"source": "/images/gpu.png"}
     ],
@@ -81,7 +83,7 @@ const projectsDatabase = {
     "description": "Implementing GPU-based computation for rendering scenes."
   },
   "DualMeshes": {
-    "category": "computer graphics",
+    "category": "COMPUTER GRAPHICS",
     "images": [
       {"source": "/images/dualmeshes.png"}
     ],
@@ -90,7 +92,7 @@ const projectsDatabase = {
     "description": "Dual mesh implementation for enhanced 3D rendering."
   },
   "Starfall": {
-    "category": "game dev",
+    "category": "GAME DEV",
     "images": [
       {"source": "/images/starfall.png"}
     ],
@@ -99,7 +101,7 @@ const projectsDatabase = {
     "description": "A 2D game where the player avoids falling stars."
   },
   "Labaretto": {
-    "category": "game dev",
+    "category": "GAME DEV",
     "images": [
       {"source": "/images/labaretto.png"}
     ],
@@ -108,7 +110,7 @@ const projectsDatabase = {
     "description": "A puzzle game featuring a labyrinth."
   },
   "FollowTheRedRabbit": {
-    "category": "game dev",
+    "category": "GAME DEV",
     "images": [
       {"source": "/images/redrabbit.png"}
     ],
@@ -117,7 +119,7 @@ const projectsDatabase = {
     "description": "A maze game where the player follows a rabbit."
   },
   "MbedFruitNinja": {
-    "category": "game dev",
+    "category": "GAME DEV",
     "images": [
       {"source": "/images/fruitninja.png"}
     ],
@@ -126,7 +128,7 @@ const projectsDatabase = {
     "description": "A Fruit Ninja style game made using the Mbed platform."
   },
   "KillBillPlatformerMaze": {
-    "category": "game dev",
+    "category": "GAME DEV",
     "images": [
       {"source": "/images/killbill.png"}
     ],
@@ -135,7 +137,7 @@ const projectsDatabase = {
     "description": "A platformer maze game with Kill Bill theme."
   },
   "Runwei": {
-    "category": "figma",
+    "category": "FIGMA",
     "images": [
       {"source": "/images/runwei.png"}
     ],
@@ -144,7 +146,7 @@ const projectsDatabase = {
     "description": "A Figma project focused on UI/UX design for a running app."
   },
   "PlantIdentifier": {
-    "category": "figma",
+    "category": "FIGMA",
     "images": [
       {"source": "/images/plantidentifier.png"}
     ],

@@ -1,4 +1,4 @@
-.page-one {
+.welcome-container {
   height: 100vh;
 }
 .canvas-container {
@@ -14,7 +14,7 @@
   left: 18%;
   top: 40%;
 }
-.page-one h1 {
+.welcome-container h1 {
   font-weight: 450;
   font-size: 2.5rem;
   font-style: italic;
