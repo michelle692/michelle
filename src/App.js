@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
-import { PromptProvider } from "./PromptContext";
+import { ProjectProvider } from "./ProjectContext";
 
 function App() {
   return (
-    <PromptProvider>
+    <ProjectProvider>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
         </Routes>
       </Router>
-    </PromptProvider> 
+    </ProjectProvider> 
   );
 }
 

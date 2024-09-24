@@ -1,14 +1,13 @@
 import React, { useRef, useState } from 'react';
 import '../css/Display.css'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
-import { OrbitControls, OrthographicCamera } from '@react-three/drei';
+import { OrbitControls, OrthographicCamera, Html } from '@react-three/drei';
 import * as THREE from 'three';
-import { usePromptContext } from '../PromptContext';
+import { useProjectContext } from '../ProjectContext';
 
 function Plane({ position, rotation, texture }) {
-  console.log("in plane", texture.source)
   const myTexture = useLoader(THREE.TextureLoader, texture.source);
-  console.log("plane texture ", myTexture)
+  // console.log("plane texture ", myTexture)
   return (
     <mesh position={position} rotation={rotation}>
       <planeGeometry args={[1.7, 1]} />
@@ -37,9 +36,8 @@ function Carousel({ planeCount, targetRotation, textures }) {
         const z = Math.sin(angle) * radius;
         const rotation = [0, -angle + (Math.PI / 2), 0];
         // const color = i === 0 ? 'black' : getRandomColor();
-        console.log(i);
         const texture = textures[i];
-        console.log("in carousel text ", texture)
+        // console.log("in carousel text ", texture)
         return <Plane key={i} position={[x, 0, z]} rotation={rotation} texture={texture} />
 
       })}
@@ -48,14 +46,14 @@ function Carousel({ planeCount, targetRotation, textures }) {
 }
 
 function Display() {
-  const { project } = usePromptContext();
-  console.log("project ", project.numImgs);
+  const { project } = useProjectContext();
+  // console.log("project ", project.numImgs);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [targetRotation, setTargetRotation] = useState(0);
   const planeCount = project.numImgs;
   const textures = project.images;
-  console.log("t ", textures)
+  // console.log("t ", textures)
 
   const handleNext = () => {
     const newIndex = (currentIndex + 1) % planeCount;
@@ -75,6 +73,8 @@ function Display() {
     setCurrentIndex(newIndex);
     setTargetRotation(targetRotation + delta);
     // console.log("target + delta ", targetRotation);
+
+    <ImgCount currIndex={currentIndex} total={planeCount}/>
   };
 
   const handlePrev = () => {
@@ -88,6 +88,44 @@ function Display() {
     setCurrentIndex(newIndex);
     setTargetRotation(targetRotation + delta);
   };
+
+  function ArrowButton({ style, label, onClick }) {
+    return (
+      <Html>
+        <button 
+          style={{
+            backgroundColor: 'white',
+            border: '1px solid black',
+            borderRadius: '40px',
+            padding: '5px 10px',
+            fontSize: '20px',
+            cursor: 'pointer',
+            position: 'absolute',
+            ...style,
+          }}
+          onClick={onClick}
+        >
+          {label}
+        </button>
+      </Html>
+    );
+  }
+
+  function ImgCount({ currIndex, total }) {
+    return (
+      <Html>
+        <div style={{
+        position: 'absolute',
+        bottom: '-18rem',
+        left: '3rem',
+        color: 'black',
+        fontSize: '20px',
+      }}>
+        {currIndex} / {total}
+      </div>
+      </Html>
+    );
+  }
 
   return (
       <div className='display-container'>
@@ -104,11 +142,14 @@ function Display() {
           <OrbitControls enableZoom={false} autoRotate={false} />
 
           <Carousel planeCount={planeCount} targetRotation={targetRotation} textures={textures}/>
+
+          <ArrowButton style={{ bottom: '-18rem', right: '2rem' }}  label="&lt;" onClick={handlePrev} />
+          <ArrowButton style={{ bottom: '-18rem', left: '2rem' }} label="&gt;" onClick={handleNext} />
         </Canvas> 
-        <div>
+        {/* <div>
           <button onClick={handlePrev}>Previous</button>
           <button onClick={handleNext}>Next</button>
-        </div>
+        </div> */}
       </div>
   );
 }
